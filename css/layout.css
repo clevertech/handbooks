@@ -1,0 +1,93 @@
+/* https://github.com/BrunoBernardino/Skeleton */
+
+/* ====== Site Styles (mobile-first) ====== */
+.page {
+    margin: 50px 0;
+    clear: both;
+}
+
+.page .page-header {
+    margin: 50px 0;
+    padding: 80px 0;
+    display: block;
+    text-align: center;
+    background: #43403F;
+}
+
+.page .page-header h2 {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #FFF;
+}
+
+.page article ul {
+    padding-left: 10px;
+}
+
+/* ====== Page Styles  (mobile-first) ====== */
+.page.first {
+    text-align: center;
+}
+
+.page.first header h1 {
+    margin: 40px 0;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: normal;
+    color: #999;
+}
+
+.page.first article p {
+    margin: 30px 0;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    color: #666;
+}
+
+.page.first footer.orange-banner {
+    margin: 50px 0;
+    display: block;
+    background: #F59543;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.page.first footer.orange-banner a {
+    padding: 20px;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+}
+.page.first footer.orange-banner a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+/* ====== Media Queries ====== */
+@media only screen and (min-width: 768px) {
+    .page {
+        margin-bottom: 100px;
+    }
+
+    .page .page-header h2 {
+        font-size: 2.2em;
+    }
+
+    .page.first header img {
+        max-width: 640px;
+    }
+
+    .page.first header h1 {
+        margin: 80px 0;
+        font-size: 2.2em;
+    }
+
+    .page.first footer.orange-banner {
+        margin: 100px 0;
+    }
+
+    .page.first footer.orange-banner a {
+        padding: 40px 20px;
+    }
+}
