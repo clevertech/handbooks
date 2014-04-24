@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Clevertech’s CleverTime Handbook</title>
+    <meta name="description" content="Clevertech’s CleverTime Handbook">
+    <meta name="author" content="clevertech.biz">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Merriweather:300italic,400italic">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+
+</head>
+<body>
+
+    <p class="old-browser">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+
+    <section class="page first">
+        <div class="container">
+            <header>
+                <a href="http://www.clevertech.biz">
+                    <img src="img/logo.png" alt="Clevertech">
+                </a>
+                <h1>CleverTime Handbook</h1>
+            </header>
+
+            <article>
+                <p>Time Tracking. Easy.</p>
+
+                <p>Supporting GitHub &amp; CleverHub.</p>
+            </article>
+        </div><!-- .container -->
+
+        <footer class="orange-banner">
+            <a href="http://www.clevertech.biz/#about">Learn more about Clevertech</a>
+        </footer>
+    </section><!-- .page.first -->
+
+    <section class="page">
+        <header class="page-header">
+            <h2>Logging in</h2>
+        </header>
+
+        <div class="container">
+            <article class="twelve columns offset-by-two alpha omega">
+                <p>You only need your @clevertech.biz Google account.</p>
+
+                <p><strong>The first time you login</strong> to CleverTime, make sure to <strong>set your GitHub Username</strong> in your <a href="http://time.clevertech.biz/profile" target="_blank">Profile</a>, otherwise the app can't automatically add time from GitHub commits and comments (yeah, that's right. It freakin' supports time tracking from comments as well!).</p>
+
+                <p>That's it.</p>
+            </article>
+        </div><!-- .container -->
+    </section><!-- .page -->
+
+    <section class="page">
+        <header class="page-header">
+            <h2>Logging Time Manually</h2>
+        </header>
+
+        <div class="container">
+            <article class="twelve columns offset-by-two alpha omega">
+                <p>Most people prefer to log their time once a day. And that's perfectly fine.</p>
+
+                <p>You can do it any time you want, tracking as little or as much time you want.</p>
+
+                <p>In order to do that, you just need to go to <a href="http://time.clevertech.biz" target="_blank">CleverTime</a>, and:</p>
+
+                <ol>
+                    <li>Choose a <strong>Project</strong>. The one the time is related to.</li>
+                    <li>Type a <strong>Description</strong>. Go crazy. Just make sure it's understandable what you did with the time you're logging.</li>
+                    <li>Set how many <strong>Hours</strong> you're logging. We advise multiples of 0.25 (15 minutes), but it's really your call.</li>
+                    <li>If you're logging some other day's work, change the <strong>Date</strong> for the time you're logging.</li>
+                    <li>Click the big blue button that says <strong>Log Time</strong>.</li>
+                    <li>You're done.</li>
+                </ol>
+            </article>
+        </div><!-- .container -->
+    </section><!-- .page -->
+
+    <section class="page">
+        <header class="page-header">
+            <h2>Logging Time Automatically</h2>
+        </header>
+
+        <div class="container">
+            <article class="twelve columns offset-by-two alpha omega">
+                <p>If you're working on a GitHub repo, you can track time from the comfort of your <strong>terminal/console</strong> (commits), or your <strong>web browser</strong> (issue comments).</p>
+
+                <p>The hours will be automatically added to the project, with the description the same as the comment/commit.</p>
+
+                <p>Worked hours can be tracked in the <strong>comments</strong> or <strong>commits</strong>, using a simple syntax:</p>
+
+                <ul class="square">
+                    <li><strong>[f:1h]</strong> will add 1 hour to the issue's worked hours</li>
+                    <li><strong>[f:20m]</strong> will add 20 minutes to the issue's worked hours</li>
+                    <li><strong>[f:1.5h]</strong> will add 1 hour and 30 minutes to the issue's worked hours</li>
+                </ul>
+
+                <p>If you don't mention an issue in the commit (e.g. "#1"), the time is still tracked, just not tied in to the issue.</p>
+            </article>
+        </div><!-- .container -->
+    </section><!-- .page -->
+
+    <section class="page">
+        <header class="page-header">
+            <h2>Viewing Entered Time</h2>
+        </header>
+
+        <div class="container">
+            <article class="twelve columns offset-by-two alpha omega">
+                <p>Going to the <a href="http://time.clevertech.biz/entries" target="_blank">Time Entries page</a> will allow you to view time by choosing a few filters.</p>
+
+                <p>Start/End Dates are mandatory, and so is at least a user (yourself by default) or a project.</p>
+            </article>
+        </div><!-- .container -->
+    </section><!-- .page -->
+
+    <section class="page">
+        <header class="page-header">
+            <h2>What about Assembla?!</h2>
+        </header>
+
+        <div class="container">
+            <article class="twelve columns offset-by-two alpha omega">
+                <p>We want to stop using Assembla in the future.</p>
+
+                <p>For now, time will be copied from Assembla into CleverTime, once a week or so, but not vice versa.</p>
+
+                <p>If your project is being managed in Assembla (we feel for you), you should probably track your time there.</p>
+
+                <p><strong>You should not track your time in both CleverTime and Assembla for the same project</strong>.</p>
+
+                <p>It's fine to track time for different projects in both places, though, if you feel that's fine.</p>
+            </article>
+        </div><!-- .container -->
+    </section><!-- .page -->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-4350274-3', 'clevertech.biz');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>
