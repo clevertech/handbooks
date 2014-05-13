@@ -67,12 +67,36 @@
 
     <section class="page">
         <header class="page-header">
+            <h2>Logging Time Automatically</h2>
+        </header>
+
+        <div class="container">
+            <article class="twelve columns offset-by-two alpha omega">
+                <p>If you're working on a GitHub repo, you can track time from the comfort of your <strong>terminal/console</strong> (commits), or your <strong>web browser</strong> (issue comments).</p>
+
+                <p>Worked hours can be tracked in the <strong>comments</strong> or <strong>commits</strong>, using a simple syntax:</p>
+
+                <ul class="square">
+                    <li><strong>[f:1h]</strong> will add 1 hour to the issue's worked hours</li>
+                    <li><strong>[f:20m]</strong> will add 20 minutes to the issue's worked hours</li>
+                    <li><strong>[f:1.5h]</strong> will add 1 hour and 30 minutes to the issue's worked hours</li>
+                </ul>
+
+                <p>The hours will be automatically added to the project with the description the same as the comment/commit. If you leave the comment/commit message blank (apart from the [f:1h] time log syntax) then the description will be the same as the issue title.</p>
+
+                <p>If you don't mention an issue in the commit (e.g. "#1") the time is still tracked, just not tied in to the issue. <strong>Whenever possible you should <em>always</em> mention an issue.</strong></p>
+            </article>
+        </div><!-- .container -->
+    </section><!-- .page -->
+    
+    <section class="page">
+        <header class="page-header">
             <h2>Logging Time Manually</h2>
         </header>
 
         <div class="container">
             <article class="twelve columns offset-by-two alpha omega">
-                <p>Most people prefer to log their time once a day. And that's perfectly fine.</p>
+                <p>Sometimes you will have to log time that is not part of a GitHub repo and need to log it manually.</p>
 
                 <p>You can do it any time you want, tracking as little or as much time you want.</p>
 
@@ -86,30 +110,6 @@
                     <li>Click the big blue button that says <strong>Log Time</strong>.</li>
                     <li>You're done.</li>
                 </ol>
-            </article>
-        </div><!-- .container -->
-    </section><!-- .page -->
-
-    <section class="page">
-        <header class="page-header">
-            <h2>Logging Time Automatically</h2>
-        </header>
-
-        <div class="container">
-            <article class="twelve columns offset-by-two alpha omega">
-                <p>If you're working on a GitHub repo, you can track time from the comfort of your <strong>terminal/console</strong> (commits), or your <strong>web browser</strong> (issue comments).</p>
-
-                <p>The hours will be automatically added to the project, with the description the same as the comment/commit.</p>
-
-                <p>Worked hours can be tracked in the <strong>comments</strong> or <strong>commits</strong>, using a simple syntax:</p>
-
-                <ul class="square">
-                    <li><strong>[f:1h]</strong> will add 1 hour to the issue's worked hours</li>
-                    <li><strong>[f:20m]</strong> will add 20 minutes to the issue's worked hours</li>
-                    <li><strong>[f:1.5h]</strong> will add 1 hour and 30 minutes to the issue's worked hours</li>
-                </ul>
-
-                <p>If you don't mention an issue in the commit (e.g. "#1"), the time is still tracked, just not tied in to the issue.</p>
             </article>
         </div><!-- .container -->
     </section><!-- .page -->
