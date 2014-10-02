@@ -1,0 +1,3 @@
+<script src="//use.typekit.net/rci1mwq.js"></script>
+
+<script>try{Typekit.load();}catch(e){}</script>
