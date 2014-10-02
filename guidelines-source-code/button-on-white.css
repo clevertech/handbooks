@@ -1,0 +1,23 @@
+.button{
+
+	border: 1px solid #17242c;
+	background: rgba(255,255,255,.2);
+	padding: 20px;
+	display: inline-block;
+	color: #17242c;
+	text-decoration: none;
+	font-size: 20px;
+	-webkit-transition: all ease .3s;
+	transition: all ease .3s;
+	text-align: center;
+	font-family: proxima-nova,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+
+}
+
+.button:hover{
+
+	background: none;
+
+}

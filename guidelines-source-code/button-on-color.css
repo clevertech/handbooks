@@ -1,0 +1,22 @@
+.button{
+
+	border: 1px solid #fff;
+	background: rgba(255,255,255,.2);
+	padding: 20px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	transition: all ease .3s;
+	text-align: center;
+	font-family: proxima-nova,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+
+}
+
+.button:hover{
+
+	background: none;
+
+}

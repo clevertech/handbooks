@@ -1,0 +1,92 @@
+//VARIABLES///////////////////////////////////////////////////////////
+
+@orange: #f94c00;
+@blue: #17242c;
+@grey: #494a4a;
+
+
+
+//MIXINS///////////////////////////////////////////////////////////
+
+.t{
+	
+	transition: all ease 0.3s;
+	
+}
+
+.light{
+	
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	
+}//light
+
+.regular{
+	
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	
+}//regular
+
+.semi{
+	
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	
+}//semi 
+
+.bold, b{
+	
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	
+}//bold
+
+.i, i{
+	
+	font-style: italic;
+	
+}//italic
+
+.u, u{
+	
+	text-decoration: underline;
+	
+}//italic
+
+.button{
+	
+	border: 1px solid white;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 20px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	.t;
+	
+	&:hover{
+		
+		background: none;
+		
+	}//hover
+	
+	&.button-dark{
+		
+		border-color: @blue;
+		color: @blue;
+		
+		&:hover{
+			
+			color: @orange;
+			border-color: @orange;
+			
+		}//hover
+		
+	}//button-dark
+	
+}//button

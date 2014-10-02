@@ -1,0 +1,196 @@
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: SHARED STYLES
+:: DEFAULT ARTICLE
+:: GRID
+:: TYPOGRAPHY
+:: LAYOUT
+
+*/
+
+
+
+//SHARED STYLES///////////////////////////////////////////////////////////
+
+*, *:after, *:before {
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+.group:before, .group:after {
+
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    
+}
+
+.group:after {
+
+    clear: both;
+    
+}
+
+::-moz-selection { 
+
+	
+
+}
+
+::selection { 
+
+	
+
+}
+
+
+
+//DEFAULT STYLES///////////////////////////////////////////////////////////
+
+body{
+	
+	font-size: 18px;
+	.regular;
+	
+}//body
+
+section{
+	
+	padding: 0;
+	
+}//section
+
+.module{
+	
+	width: 100%;
+	margin: auto;
+	
+}//module
+
+.section-intro{
+		
+	text-align: center;
+	padding: 75px 20px;
+	background: #efefef;
+	
+	p{
+		
+		width: 100%;
+		max-width: 600px;
+		margin: auto;
+		line-height: 22px;
+		
+	}//p
+	
+}//.section-intro
+
+
+
+//GRID///////////////////////////////////////////////////////////
+
+.half-column{
+	
+	width: 50%;
+	float: left;
+	
+}//.half-column
+
+
+
+
+//TYPOGRAPHY///////////////////////////////////////////////////////////
+
+h1{
+		
+	.semi;
+	font-size: 42px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	color: @blue;
+	
+}//h1
+
+h2{
+		
+	.semi;
+	font-size: 34px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	color: @blue;
+	
+}//h2
+
+h3{
+		
+	.regular;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	color: @blue;
+	
+}//h3
+
+p{
+	
+	font-size: 18px;
+	.regular;
+	line-height: 22px;
+	margin-bottom: 22px;
+	color: #494a4a;
+	
+}//p
+
+ul, ol{
+
+	text-align: left;
+	margin-bottom: 40px;
+	
+	li{
+		
+		list-style: square;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 22px;
+		color: #494a4a;
+		
+		&:last-of-type{
+			
+			margin-bottom: 0;
+			
+		}//last
+		
+	}//li
+	
+}//ul
+
+ol{
+	
+	li{
+		
+		list-style: decimal;
+		
+	}//li
+	
+}//ol
+
+p, li, ul{
+
+	a{
+		
+		color: @orange;
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+		.t;
+		
+		&:hover{
+			
+			border-bottom-color: @orange;
+			
+		}//hover
+		
+	}//a
+
+}//p, li, ul
