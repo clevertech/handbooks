@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Clevertech’s CleverHub Handbook</title>
-    <meta name="description" content="Clevertech’s CleverHub Handbook">
+    <title>Clevertech’s Client Handbook</title><!-- Non-technical Client Handbook -->
+    <meta name="description" content="Clevertech’s Client Handbook">
     <meta name="author" content="clevertech.biz">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <p class="old-browser">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+    <!-- <p class="old-browser">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p> -->
 
     <section class="page first">
         <div class="container">
@@ -32,92 +32,110 @@
                 <h1>CleverHub Handbook</h1>
             </header>
 
-            <article>
+            <article class="sub-header">
+                
                 <p>Our simplified Project Management Tool for use alongside GitHub.</p>
-
                 <p>The power of GitHub, organized.</p>
             </article>
         </div><!-- .container -->
 
-        <footer class="orange-banner">
-            <a href="http://www.clevertech.biz/#about">Learn more about Clevertech</a>
-        </footer>
     </section><!-- .page.first -->
 
     <section class="page">
-        <header class="page-header">
-            <h2>Logging in</h2>
-        </header>
-
-        <div class="container">
+        <div class="container header">
             <article class="twelve columns offset-by-two alpha omega">
-                <p>You only need a GitHub account that has permissions to view Clevertech's repositories (if you're looking for private, otherwise, you can still access the public ones).</p>
+                <h2>Logging in</h2>
 
+                <p>You only need a GitHub account that has permissions to view Clevertech's repositories (if you're looking for private, otherwise, you can still access the public ones).</p>
                 <p>That's it.</p>
             </article>
         </div><!-- .container -->
     </section><!-- .page -->
 
     <section class="page">
-        <header class="page-header">
-            <h2>Organizing</h2>
-        </header>
-
         <div class="container">
             <article class="twelve columns offset-by-two alpha omega">
+                <h2>Organizing</h2>
                 <p>We use <strong>labels</strong> to organize information</p>
-
-                <ul class="square">
-                    <li><strong>est-*</strong> labels are used for estimating issues (1h, 2h, 4h, 8h)</li>
-                    <li><strong>stt-*</strong> labels are used for defining the issue's status (New, In Progress, Test)</li>
-                    <li><strong>prt-*</strong> labels are used for prioritizing the issues (High, Normal, Low)</li>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>est-*</strong> labels are used for estimating issues (1h, 2h, 4h, 8h)</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>stt-*</strong> labels are used for defining the issue's status (New, In Progress, Test)</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>prt-*</strong> labels are used for prioritizing the issues (High, Normal, Low)</li>
                 </ul>
-
+                <br/>
                 <p>Worked hours can be tracked in the <strong>comments</strong> or <strong>commits</strong>, using a simple syntax:</p>
 
-                <ul class="square">
-                    <li><strong>[f:1h]</strong> will add 1 hour to the issue's worked hours</li>
-                    <li><strong>[f:20m]</strong> will add 20 minutes to the issue's worked hours</li>
-                    <li><strong>[f:1.5h]</strong> will add 1 hour and 30 minutes to the issue's worked hours</li>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>[f:1h]</strong> will add 1 hour to the issue's worked hours</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>[f:20m]</strong> will add 20 minutes to the issue's worked hours</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>[f:1.5h]</strong> will add 1 hour and 30 minutes to the issue's worked hours</li>
                 </ul>
-
+                <br/>
                 <p>If you need to relate an issue to another (for example, a task for implementing a user story), simply mention it in the description (like "Related to #1", where "1" is the number of the related issue).</p>
             </article>
         </div><!-- .container -->
     </section><!-- .page -->
 
     <section class="page">
-        <header class="page-header">
-            <h2>Limitations</h2>
-        </header>
-
         <div class="container">
+            
             <article class="twelve columns offset-by-two alpha omega">
+                <h2>Limitations</h2>
                 <p>The limitations we have for how many hours you can estimate, the statuses, and 3 levels of priorities exist on purpose.</p>
 
                 <p>In terms of <strong>estimates</strong>, it means:</p>
 
-                <ul class="square">
-                    <li>An issue should never take more than a day to solve. If it takes more, split it up.</li>
-                    <li>Estimates are not final, so you shouldn't estimate "3h". If you think something will take 3h, estimate it as 4.</li>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg">An issue should never take more than a day to solve. If it takes more, split it up.</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg">Estimates are not final, so you shouldn't estimate "3h". If you think something will take 3h, estimate it as 4.</li>
                 </ul>
-
+                <br/>
                 <p>Regarding <strong>statuses</strong>, it means:</p>
 
-                <ul class="square">
-                    <li>A ticket is either not started (new), started (in progress), waiting to be approved (test), or approved (closed).</li>
-                    <li>Anything "in between" can be addressed with custom labels. Use them to address the project needs.</li>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg">A ticket is either not started (new), started (in progress), waiting to be approved (test), or approved (closed).</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg">Anything "in between" can be addressed with custom labels. Use them to address the project needs.</li>
                 </ul>
-
+                <br/>
                 <p>As for <strong>priorities</strong>, it means:</p>
 
-                <ul class="square">
-                    <li>A ticket is either very important (high), important (normal), or "nice to have" (low).</li>
-                    <li>Like the statuses, anything "in between" can be addressed with custom labels. Use them to address the project needs.</li>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg">A ticket is either very important (high), important (normal), or "nice to have" (low).</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg">Like the statuses, anything "in between" can be addressed with custom labels. Use them to address the project needs.</li>
                 </ul>
+
             </article>
         </div><!-- .container -->
     </section><!-- .page -->
+
+    <footer class="footer-primary">
+        <div><strong>Learn more about Clevertech</strong></div>
+        <div>
+            <div>Follow us</div>
+            <div>
+                <a href="https://www.clevertech.biz/"><img src="guidelines-images/icon-website-filled.svg" alt="clevertech"></a>
+                <a href="https://www.instagram.com/clevertech.biz/"><img src="guidelines-images/icon-instagram-filled.svg" alt="instagram"></a>
+                <a href="https://twitter.com/clevertech"><img src="guidelines-images/icon-twitter-filled.svg" alt="twitter"></a>
+                <a href="https://www.facebook.com/Clevertech"><img src="guidelines-images/icon-facebook-filled.svg" alt="facebook"></a>
+                <a href="https://www.youtube.com/c/clevertechlife"><img src="guidelines-images/icon-youtube-filled.svg" alt="youtube"></a>
+                <a href="https://www.linkedin.com/company/clevertech/"><img src="guidelines-images/icon-linkedin-filled.svg" alt="linkedin"></a>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-secondary">
+        <div><strong>Learn more about Clevertech</strong></div>
+        <div>
+            <a href="https://www.clevertech.biz/"><img src="guidelines-images/icon-website-filled.svg" alt="clevertech"></a>
+            <a href="https://www.instagram.com/clevertech.biz/"><img src="guidelines-images/icon-instagram-filled.svg" alt="instagram"></a>
+            <a href="https://twitter.com/clevertech"><img src="guidelines-images/icon-twitter-filled.svg" alt="twitter"></a>
+            <a href="https://www.facebook.com/Clevertech"><img src="guidelines-images/icon-facebook-filled.svg" alt="facebook"></a>
+            <a href="https://www.youtube.com/c/clevertechlife"><img src="guidelines-images/icon-youtube-filled.svg" alt="youtube"></a>
+            <a href="https://www.linkedin.com/company/clevertech/"><img src="guidelines-images/icon-linkedin-filled.svg" alt="linkedin"></a>
+        </div>
+    </footer>
+
+    <p>2000 - 2021 &#169; Clevertech&trade;</p>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
