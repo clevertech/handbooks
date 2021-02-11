@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <p class="old-browser">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+    <!-- <p class="old-browser">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p> -->
 
     <section class="page first">
         <div class="container">
@@ -29,12 +29,13 @@
                 <a href="http://www.clevertech.biz">
                     <img src="guidelines-images/logo-purple-and-white-background.svg" alt="Clevertech">
                 </a>
-                <h1>Client Handbook</h1>
+                <h1>CleverHub Handbook</h1>
             </header>
 
             <article class="sub-header">
-                <p>We are committed to make your project successful.</p>
-                <p>Welcome to this amazing journey.</p>
+                
+                <p>Our simplified Project Management Tool for use alongside GitHub.</p>
+                <p>The power of GitHub, organized.</p>
             </article>
         </div><!-- .container -->
 
@@ -43,25 +44,10 @@
     <section class="page">
         <div class="container header">
             <article class="twelve columns offset-by-two alpha omega">
-                <h2>Communication</h2>
-                <p><strong>Communication is ridiculously important.</strong></p>
+                <h2>Logging in</h2>
 
-                <p>
-                    The lack of communication is like the lack of oxygen. You die without it. 
-                    <br/>We have daily standups, where for 5-10 minutes tops we talk about what was done the day before, what will be done in that day, and if there are any blockers that prevent us from moving forward.
-                    <br/>You can be a part of those daily standups, if you choose to.
-                </p>
-
-                <p>
-                    We also send you a weekly update where we mention the most important things we achieved that week and what’s planned for the next week.
-                    <br/>Additionally, we have one meeting at the end of each sprint (1 or 2 weeks) to talk with you about the progress made and the plan for the next sprint.
-                    <br/>You can be present in our Slack room as well (no account required), which is where everyone in the team chats all day, every day.
-                </p>
-
-                <p>
-                    On GitHub or CleverHub (the project management tools we use), you can also get a glimpse of what’s happening, priorities, and plan for the future.
-                </p>
-
+                <p>You only need a GitHub account that has permissions to view Clevertech's repositories (if you're looking for private, otherwise, you can still access the public ones).</p>
+                <p>That's it.</p>
             </article>
         </div><!-- .container -->
     </section><!-- .page -->
@@ -69,15 +55,23 @@
     <section class="page">
         <div class="container">
             <article class="twelve columns offset-by-two alpha omega">
-                <h2>Transparency</h2>
-                <p><strong>We’re here for the long run.</strong></p>
-                <p>
-                    We are committed to help you launch the best product possible.
-                    <br/>That means we are transparent in all our communications.
-                    <br/>If there’s a problem, you’ll know.
-                    <br/>We are honest and expect nothing but honesty back. If there’s something bothering you, let us know.
-                    <br/>Projects work best when the information is transparent both ways.
-                </p>
+                <h2>Organizing</h2>
+                <p>We use <strong>labels</strong> to organize information</p>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>est-*</strong> labels are used for estimating issues (1h, 2h, 4h, 8h)</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>stt-*</strong> labels are used for defining the issue's status (New, In Progress, Test)</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>prt-*</strong> labels are used for prioritizing the issues (High, Normal, Low)</li>
+                </ul>
+                <br/>
+                <p>Worked hours can be tracked in the <strong>comments</strong> or <strong>commits</strong>, using a simple syntax:</p>
+
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>[f:1h]</strong> will add 1 hour to the issue's worked hours</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>[f:20m]</strong> will add 20 minutes to the issue's worked hours</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg"><strong>[f:1.5h]</strong> will add 1 hour and 30 minutes to the issue's worked hours</li>
+                </ul>
+                <br/>
+                <p>If you need to relate an issue to another (for example, a task for implementing a user story), simply mention it in the description (like "Related to #1", where "1" is the number of the related issue).</p>
             </article>
         </div><!-- .container -->
     </section><!-- .page -->
@@ -86,37 +80,29 @@
         <div class="container">
             
             <article class="twelve columns offset-by-two alpha omega">
-                <h2>What you’ll get</h2>
-                <p><strong>We don’t know what you’ll get. Not right now.</strong></p>
+                <h2>Limitations</h2>
+                <p>The limitations we have for how many hours you can estimate, the statuses, and 3 levels of priorities exist on purpose.</p>
 
-                <p>
-                    We do know what the product should solve and do, though.
-                    <br/>And that’s where our focus will be.
-                    <br/>We will deliver the best product possible within the time period we defined.
-                    <br/>We will help you define the success/actionable metrics, for us to learn if the product is being successful or not.
-                </p>
+                <p>In terms of <strong>estimates</strong>, it means:</p>
 
-                <p>
-                    We will work with you to define the priorities for the first sprint, and deliver working features by the end of it, the most important ones.
-                    <br/>After that, we will work together again to re-evaluate the priorities for the next sprint, learn if anything should be changed from what was already done, and continue this iteration process.
-                </p>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg">An issue should never take more than a day to solve. If it takes more, split it up.</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg">Estimates are not final, so you shouldn't estimate "3h". If you think something will take 3h, estimate it as 4.</li>
+                </ul>
+                <br/>
+                <p>Regarding <strong>statuses</strong>, it means:</p>
 
-                <p>
-                    To make the product even better, we advise to put it in front of real end-customers as soon as possible, so we can achieve validated learning, which will enable us to make decisions based off of real data.
-                    <br/>This allows the product to shape into a successful product, instead of an “assumptions-based” product, based just off of scope.
-                </p>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg">A ticket is either not started (new), started (in progress), waiting to be approved (test), or approved (closed).</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg">Anything "in between" can be addressed with custom labels. Use them to address the project needs.</li>
+                </ul>
+                <br/>
+                <p>As for <strong>priorities</strong>, it means:</p>
 
-            </article>
-        </div><!-- .container -->
-    </section><!-- .page -->
-
-    <section class="page">
-        <div class="container">
-            <article class="twelve columns offset-by-two alpha omega">
-                <h2>Up next</h2>
-                <p>You should have a <strong>kick-off meeting</strong> with the key team members assigned to your project soon, where we’ll talk about what your product is trying to solve, define user stories, success metrics, and answer any questions you might have.</p>
-
-                <p><strong>We’ll see you there.</strong></p>
+                <ul class="arrow">
+                    <li><img src="guidelines-images/icon-list-arrow.svg">A ticket is either very important (high), important (normal), or "nice to have" (low).</li>
+                    <li><img src="guidelines-images/icon-list-arrow.svg">Like the statuses, anything "in between" can be addressed with custom labels. Use them to address the project needs.</li>
+                </ul>
 
             </article>
         </div><!-- .container -->
