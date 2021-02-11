@@ -12,24 +12,61 @@ div.container {
 }
 
 .container header a img {
-    width: 17%;
+    width: 5em;
 }
 
 section.page {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
-.page .page-header {
-    margin: 3% 0;
-    margin-left: -30%;
+section.page div.container, section.page {
+    /* width: 60vw;
+    margin: 0 auto; */
+}
+
+article {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2.5em;
+}
+
+.page .container article p:nth-child(1) {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: 500;
+    font-family: "Dr", serif;
+    margin-bottom: 1em;
+}
+
+.sub-header p {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    /* font-weight: 500; */
+    font-family: "Dr", serif;
+    margin-bottom: 1em;
+}
+
+.page .container h2 {
+    /* display: flex; */
+    /* margin: 3% 0; */
+    /* margin-left: -30%; */
     /* padding: 0% 0; */
     /* display: block; */
-    text-align: left;
+    /* text-align: left; */
     /* display:inline-block;
     margin-left: 21.5%;
     margin-bottom: -5%; */
+    width: 60%;
+    /* max-width: 90%; */
+    margin: 0 auto;
+    margin-left: 9vw;
 }
 
 .page .page-header h2 {
@@ -38,6 +75,7 @@ section.page {
     font-weight: 500;
     line-height: 1.2em;
     color: #460B38;
+    /* text-align: center; */
 }
 
 .page article ul {
@@ -52,8 +90,26 @@ section.page {
     text-align: center;
     background-color: #E6EAFD;
     margin-top: 0;
+    margin-bottom: 8em;
     padding-top: 2%;
     padding-bottom: 5%;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+position: relative
+}
+
+body {
+    /* width: 100%; */
+    width: 100vw;
+    margin: 0;
+}
+section div header {
+    width: 100%;
 }
 
 .page.first header h1 {
@@ -92,36 +148,49 @@ section.page {
 
 footer {
     display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     background: #F5F0F0;
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
     margin-bottom: 5%;
-    height: 1.5em;
+    height: 2.5em;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 2vw 4vw;
+    padding-bottom: 2vw;
     border-width: medium;
-    border-radius: 2em;
+    border-radius: 4em;
     /* padding: 0; */
     /* text-align: center;
     justify-content: center; */
 }
 
 footer div {
-    font-size: 1.5em;
+    font-size: 2.5vw;
+}
+
+footer div div {
+    font-size: 1.5vw;
+    /* margin-top: .5em; */
+}
+
+footer div div:nth-child(1) {
+    margin-right: 2vw;
+    /* margin-top: -.5vw;    */
 }
 
 footer div:nth-child(2) {
-    font-size: .8em;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
-    width: 55%;
-    font-size: 80%;
+    justify-content: flex-start;
+    /* width: 40vw; */
+    font-size: 1vw;
 }
 
 footer div:nth-child(2) div:nth-child(1) {
-    margin-right: -3em;
+    /* margin-right: -3em; */
 }
 
 footer div div a {
@@ -142,6 +211,25 @@ footer div a img:focus {
 footer + p {
     text-align: center;
     font-size: 70%;
+}
+
+.footer-secondary {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+}
+
+.footer-secondary div:nth-child(1) {
+    font-size: .65em;    
+    margin-bottom: .25em;
+}
+
+.footer-secondary div a img {
+    width: 6vw;
+    margin-right: 2em;
 }
 
 /* ====== Media Queries ====== */
@@ -175,5 +263,35 @@ footer + p {
 
     .page.first footer.orange-banner a {
         padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {   
+    .footer-primary { display: none; }
+    .footer-secondary { display: flex; }
+}
+
+@media screen and (max-width: 320px) {
+    .footer-secondary div:nth-child(1) {
+        font-size: .5em;    
+        margin-bottom: .25em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .page .container article:not(.sub-header) p:nth-child(1) {
+        width: 100vw;
+        font-size: 1.6em;
+        margin-left: 10vw;
+    }
+
+    article:not(.sub-header) p:not(:first-child) {
+        width: 80vw;
+        font-size: 1em;
+        margin-left: 10vw;
+    }
+
+    .page.first .container {
+        margin-left: -4vw;
     }
 }
