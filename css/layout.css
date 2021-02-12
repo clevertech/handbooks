@@ -175,7 +175,7 @@ footer div div a img {
 }
 
 footer div:nth-child(2) div:nth-child(1) {
-    margin-top: -1em;
+    margin-top: -.75em;
 }
 
 footer div a img:hover,
